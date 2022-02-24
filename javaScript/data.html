@@ -5,8 +5,12 @@
     <title>data</title>
   <script>
     var date = new Date();
-    document.write((date.getDate())+ "/"+ (date.getMonth() +1)+ "/" +(date.getFullYear()) );
-
+    //document.write((date.getDate())+ "/"+ (date.getMonth() +1)+ "/" +(date.getFullYear()) );
+   // document.write('')
+    document.write(date.toString());
+    date.setDate(date.getDate()+1 );
+    document.write('<hr/>');
+    document.write(date.toString());
 
 
   </script>
