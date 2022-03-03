@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM WINDOW</title>
+  <script>
+      var janela
+    function abrirPopUp(){
+      janela=window.open('https://www.google.com.br/','nova_janela','heigth=100,width=200')
+    }
+    function fecharPopUp(){
+        janela.clone()
+    }
+  </script>
+</head>
+<body>
+<button onclick="abrirPopUp()">abrir janela</button>
+<button onclick="fecharPopUp()">fechar janela</button>
+<button onclick="window.print()">imprimir pagina</button>
+
+</body>
+</html>
