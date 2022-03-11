@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bom timing</title>
+    <script>
+        //setTimeout(function (){document.write('teste')},2000)//este imprime uma unica vez
+       // setInterval(function (){document.write('teste'+'<br/>')},2000)//este imprime toda vez depois do intervalo
+        var i=10
+        setInterval(function (){
+            document.write(i+'<br/>')
+            i--
+        if(i==0){
+            window.location.reload()
+        }
+        },1000)
+    </script>
+</head>
+<body>
+
+</body>
+</html>
