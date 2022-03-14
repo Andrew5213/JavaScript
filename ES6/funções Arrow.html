@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>função arrow</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      /*
+        let quadrado = function (x=5 ){// este x=5 e o valor defaut caso o programador esqueça de passar o parametro
+            return x*x;
+        }
+
+       */
+        // agora vamos fazer uma função arrow
+      /*
+      let quadrado = (x)=>{
+            return x*x;
+        }
+
+       */
+        //tambem podemos fazer desta forma
+        /*let quadrado = x =>{
+            return x*x
+        }
+
+         */
+      //ou ainda melhor que e desta maneira
+     // let quadrado = x=>x*x;//retorno implicito
+     /*
+      let parOuImpar = function (numero){
+          if(numero % 2 ===0){
+            return 'par'
+          }else{
+              return 'impar'
+          }
+      }
+
+      */
+      // agora vamos otimizar um pouco
+     /* let parOuImpar = numero =>{
+          if(numero % 2 ===0){
+              return 'par'
+          }else{
+              return 'impar'
+          }
+      }
+      vamos melhorar mais utilizando if ternario
+      */
+      let parOuImpar = numero=> numero % 2 ===0 ? 'par':'impar';
+
+
+
+
+        document.write(parOuImpar(3))
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
