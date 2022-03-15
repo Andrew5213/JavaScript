@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>oo pilar da abstração</title>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script type="text/babel">
+    class contaBancaria{
+      constructor() {
+        this.agencia = 1075
+        this.numeroConta = 8848290
+        this.saldo = 50
+        this.limite = 450
+
+      }
+      depositar(valorDeposito){
+        this.saldo += valorDeposito;
+      }
+      sacar(valorSaque){
+        this.saldo -= valorSaque
+      }
+      consultarSaldo(){
+        return this.saldo
+      }
+
+    }
+    let x = new contaBancaria();
+    //console.log(x.saldo)
+    console.log(x.depositar(50))
+    console.log(x.consultarSaldo())
+  </script>
+</head>
+<body>
+
+</body>
+</html>
