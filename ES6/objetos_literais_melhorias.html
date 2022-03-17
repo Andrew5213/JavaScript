@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>objetos literais - melhorias </title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        let nome='andrew'
+        let  idade =20
+        let sexo = 'masculino'
+        let profissao = 'programador'
+        let objeto ={
+            nome:nome,// como o nome da variavel e o msm podemos fazer assim
+            idade,
+            sexo,
+            profissao,
+            exibirResumo : function (){
+                console.log(`${this.nome} ${this.idade} anos ${this.sexo} é ${this.profissao}`)
+            }
+
+        }
+        objeto.exibirResumo()
+    </script>
+</head>
+<body>
+
+</body>
+</html>
