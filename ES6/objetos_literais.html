@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>objetos literais</title>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script type="text/babel">
+    let produtoLiteral={
+      descrição:'geladeira',
+      preco:1500,
+      verDescricao :function (){
+        console.log(`${this.descrição} por apenas ${this.preco}`);
+      }
+
+
+    }
+    produtoLiteral.verDescricao()
+  </script>
+</head>
+<body>
+
+</body>
+</html>
