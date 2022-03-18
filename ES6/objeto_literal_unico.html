@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>objetos literais unicos</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        let assinatura ={
+            idCliente:1000,
+            descrição:'acesso a internet',
+            status(){
+                console.log('ativo');
+            }
+
+        }
+        console.log(assinatura.descrição)
+        let y =assinatura//aqui esta sendo passado a referencia do objeto e nao o proprio objeto
+        console.log(y.descrição);
+        y.descrição = 'internet + tv + telefone'
+        console.log(assinatura.descrição)
+        console.log(y.descrição)
+    </script>
+</head>
+<body>
+
+</body>
+</html>
