@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>funcoes construtoras </title>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+    let Carro = function (){
+      this.cor='amarelo'
+      this.modelo = 'chevette'
+      this.velocidade=0
+      var velocidadeMax=180
+        var km =0
+      this.acelerar=function (){
+        //this.velocidade+=10
+
+         let velo=  this.getVelocidade()+50
+          if(velo>this.velocidadeMax) {
+     velo=this.velocidadeMax
+          }
+          this.setVelocidade(velo)
+            km+=0.05
+          console.log(km)
+        }
+
+
+      this.getVelocidade=function (){
+        return this.velocidade
+      }
+      this.setVelocidade=function (velocidade){
+        this.velocidade=velocidade;
+      }
+    }
+    let carro = new Carro();
+    carro.acelerar()
+    console.log(carro.getVelocidade())
+    carro.acelerar()
+    console.log(carro.getVelocidade())
+    carro.acelerar()
+    console.log(carro.getVelocidade())
+    carro.acelerar()
+    console.log(carro.getVelocidade())
+    carro.acelerar()
+    console.log(carro.getVelocidade())
+    carro.acelerar()
+    console.log(carro.getVelocidade())
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>
