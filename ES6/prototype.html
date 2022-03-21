@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prototype</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+       let a1 ={
+           cor:'branco',
+           modelo:'arbus a380',
+           levantarVoo:function (){
+               console.log('levantar voo');
+           }
+       }
+       let aviaof = function (){
+           this.cor='azul'
+           this.modelo='boeing 737'
+           this.levantarVoo=function (){console.log('levantar voo')}
+
+       }
+       let a2 = new aviaof();
+       // agora a class
+       class  aviaoC{
+         constructor() {
+             this.cor='vermelho',
+                 this.modelo='embraer'
+             this.levantarVoo=function (){console.log('levantar voo')}
+
+         }
+
+       }
+       let a3 = new aviaoC();
+       console.log(a1);
+       console.log(a2)
+       console.log(a3)
+    </script>
+</head>
+<body>
+
+</body>
+</html>
