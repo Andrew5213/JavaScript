@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>destructuring parte 1 </title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+    // este e um operador de desestruturação
+    let frutas=['abacaxi', 'pera','mamao','uva']
+   // let [a,b,c]= frutas
+    //console.log(a,b,c)
+    //agora vamos pular um indice
+    /*let [a,,b]=frutas;
+    console.log(frutas)
+    console.log(a,b)
+    agora vamos atribuir um valor que nao existe
+
+     */
+    let [a,b,c,d,e='banana']=frutas
+    console.log(`vetor frutas ${frutas}`)
+    console.log(`destructuring ${a}${b}`)
+    let coisas = [['abacaxi', 'pera','mamao','uva'],['jose','maria']]
+    //agora vamos pegar  o valor de maria
+   // let [,[,x]]=coisas
+    //console.log(x)
+    console.log(coisas)
+    // agora vamos pegar o valor de pera
+    let [[,pera]]=coisas
+    console.log(pera)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        let produto={
+            descricao:'notebook',
+            preco:1800,
+            detalhes:{
+                fabricante:'acer',
+                modelo:'xyz'
+            }
+        }
+        //let {descricao,preco}=produto; // esta e a forma para objetos
+        //agora vamos alterar o nome da variavel com dois pontos
+        //let {descricao:d,preco:p}=produto
+        //agora vamos extrair fabricante e modelo
+        let{detalhes:{fabricante:d,modelo:p}}=produto
+        console.log(produto)
+        console.log(d,p)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

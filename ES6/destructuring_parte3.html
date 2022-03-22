@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+
+       /* let arr =[10,20,30,40]
+        function teste([a,b,,c]){
+            console.log(a,b,c)
+        }
+        teste(arr)
+
+        */
+       let obj={
+           a:10,
+           b:20,
+           c:30,
+           d:40
+       }
+       function teste({a,b}){
+            console.log(a,b)
+       }
+       teste(obj)
+    </script>
+</head>
+<body>
+
+</body>
+</html>
